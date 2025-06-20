@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.nav-container {
+    background-color: #009425;
+    position: fixed;
+    text-align: center;
+    height: 4rem;
+    width: 100%;
+}
+
+.top-nav {
+    display: inline-block;
+    max-width: 992px;
+    width: 100%;
+}
+
+.top-nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.top-nav ul li {
+    display: inline-block;
+}
+
+.top-nav ul li a {
+    display: inline-block;
+    padding: 16px 10px;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    width: 120px;
+    text-align: center;
+    color: #b4f09d;
+    text-shadow: 1px 1px 1px #333;
+    text-decoration: none;
+    text-underline-offset: 7px;
+    transition: text-decoration 0.5s, color 0.5s;
+    box-sizing: border-box;
+}
+
+ul li a:hover {
+    color: #D2E28B;
+    text-decoration: underline 2px;
+}
+
+.top-nav a.icon {
+    color: #fff;
+    display: none;
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .top-nav li:not(:last-child) {
+        display: none;
+    }
+
+    .top-nav a.icon {
+        float: right;
+        display: block;
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-nav.responsive {
+        position: relative;
+        background-color: #68eb4e;
+    }
+
+    .top-nav.responsive .icon {
+        display: block;
+    }
+
+    .top-nav.responsive ul {
+        margin-top: 50px;
+    }
+
+    .top-nav.responsive li {
+        display: block;
+        text-align: center;
+        line-height: 15px;
+        border-top: 1px solid #aaa;
+    }
+
+    .top-nav.responsive li a {
+        color: #000;
+        width: 100%;
+        transition: none;
+        text-shadow: none;
+    }
+
+    .top-nav.responsive li a:hover {
+        color: #880e0e;
+        background-color: #333;
+        text-decoration: none;
+    }
+}
+
+.container-banner {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Manaus_vista_do_rio_Negro.jpg/1200px-Manaus_vista_do_rio_Negro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    overflow: hidden;
+}
+
+.text-banner {
+    width: 100%;
+    max-width: 992px;
+    text-align: left;
+    display: inline-block;
+    padding: 60px 30px;
+    color: #24c005;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 68px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.text-banner-small {
+    font-size: 42px;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+}
+
+#cidade,
+#historia,
+#atracoes,
+#fauna,
+#manaus-amazonia,
+#flora,
+#nativos {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: larger;
+    max-width: 992px;
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    font-family: "Noto", sans-serif;
+    padding: 10px 10px 0 10px;
+}
+
+
+h1.default {
+    padding: 30px 0 0 20px;
+    color: #24c005;
+}
+
+h1.titulo-sobre {
+    padding: 30px 0 0 20px;
+    color: #696b69;
+    text-align: right;
+}
+
+#cidade>p,
+#atracoes>p,
+#historia>p,
+#manaus-amazonia>p {
+    color: #393a39;
+    font-size: 0.875em;
+    text-align: justify;
+    margin: 10px;
+    line-height: 25px;
+}
+
+#nativos p{
+    
+    padding-bottom: 0%;
+    
+}
+
+
+#fauna {
+    margin-bottom: 40px;
+}
+
+.fauna-conteudo {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.fauna-div {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    width: 170px;
+}
+
+.fauna-figure {
+    margin: 0;
+    padding: 0;
+}
+
+.fauna figcaption {
+    color: #555;
+    font-size: 0.875em;
+    line-height: 21px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fauna {
+    border-radius: 100%;
+    max-width: 100%;
+    width: 12rem;
+    height: 10rem;
+    display: inline;
+    justify-content: top;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.fauna-titulo {
+    font-weight: bold;
+    display: block;
+}
+
+#flora {
+    margin-bottom: 40px;
+}
+
+.flora-conteudo {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flora-conteudo>div {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    width: 170px;
+}
+
+.flora-conteudo figure {
+    margin: 0;
+    padding: 0;
+}
+
+.flora-conteudo figcaption {
+    color: #555;
+    font-size: 0.875em;
+    line-height: 21px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.flora-conteudo img {
+    border-radius: 100%;
+    max-width: 100%;
+    width: 25rem;
+    height: 10rem;
+    display: inline;
+    justify-content: top;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.flora-titulo {
+    font-weight: bold;
+    display: block;
+}
+
+
+footer {
+    background-color: #009425;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: #FFF;
+    text-align: center;
+    padding: 20px 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .img-evento {
+        float: left;
+    }
+}
+
+
+
+h1.default,
+h1.titulo-sobre,
+h1.fauna,
+h1.flora {
+    text-align: center;
+
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #009425;
+}
+
+
+section p {
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+main section:not(:last-child)::after {
+    content: "";
+    display: block;
+
+    margin-top: 30px;
+}
+
+
+#atracoes ul li {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+
+    list-style-type: square;
+}
+h4 {
+    font-weight: bold;
+    color: #009425;
+    margin-bottom: px;
+}
+
+
+#atracoes img,
+.fauna img,
+.flora-conteudo img,
+figure img {
+
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#atracoes img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+    color: #555;
+}
+
+
+.fauna-conteudo,
+.flora-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fauna-conteudo div,
+.flora-conteudo div {
+    width: 250px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h1.titulo-sobre {
+    padding: 30px 0 0 20px;
+    color: #115f01;
+}
+.imagens-textos {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+.imagem-legenda {
+  text-align: center;
+  width: 300px; 
+}
+
+.imagem-legenda img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+   .sobre {
+  
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    color: #fff;
+}
+
+.sobre-conteudo {
+    max-width: 992px;
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    font-family: "Noto", sans-serif;
+    padding: 30px 10px 40px 10px;
+}
+.sobre-conteudo > p {
+    font-size: 1em;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+
+footer {
+    background-color: #009425;
+    color: rgb(189, 185, 185);
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+@media (max-width: 768px) {
+    main section {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .fauna-conteudo,
+    .flora-conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fauna-conteudo div,
+    .flora-conteudo div {
+        width: 90%;
+    }
+}
